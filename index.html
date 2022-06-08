@@ -1,15 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>말뭉치 관리자</title>
+
+  <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
+  <div id="wrap" class="corpus-joined-list">
+    <div id="header"></div>
 
+    <div id="main" class="center">
+      <section class="section-page-top">
+        <div class="section-inner">
+          <h2 class="page-title">웹 말뭉치 가입 진행 현황</h2>
+        </div>
+      </section>
+
+      <section class="section-page-content">
+        <div class="section-inner">
+          <div class="section-content section-joined-list">
+
+            <!-- 가입 진행 현황 테이블 -->
+            <div class="input-info-table">
+              <h4 class="table-title">가입 진행 현황</h4>
+              <table class="table-joined-list">
+                <colgroup>
+                </colgroup>
+
+                <thead>
+                  <tr>
+                    <th>참여자 ID(일련번호)</th>
+                    <th>입력 일자</th>
+                    <th>참여자 이름</th>
+                    <th>출생년도</th>
+                    <th>성별</th>
+                    <th>휴대전화 번호</th>
+                    <th>추천인코드</th>
+                    <th>입력 사이트</th>
+                    <th>입력 계정 및 게시글 수</th>
+                    <th>수집 진행 여부</th>
+                    <th>수집 게시글 건수</th>
+                    <th>이용동의 계약서</th>
+                    <th>계약서 업로드 일시</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="joined-user-id">0001</td>
+                    <td class="joined-input-date">20220601</td>
+                    <td class="joined-user-name">홍길동</td>
+                    <td class="joined-user-birth">1998</td>
+                    <td class="joined-user-gender">남</td>
+                    <td class="joined-user-phone">010-1234-5678</td>
+                    <td class="joined-user-code">M24</td>
+                    <td class="joined-input-site">인스타그램</td>
+                    <td class="joined-site-num">2</td>
+                    <td class="joined-user-state">대기</td>
+                    <td class="joined-contents-num">-</td>
+                    <td class="joined-user-agree"></td>
+                    <td class="joined-agree-date">2022-07-12</td>
+                  </tr>
+                  <tr>
+                    <td class="joined-user-id">0001</td>
+                    <td class="joined-input-date">20220601</td>
+                    <td class="joined-user-name">홍길동</td>
+                    <td class="joined-user-birth">1998</td>
+                    <td class="joined-user-gender">남</td>
+                    <td class="joined-user-phone">010-1234-5678</td>
+                    <td class="joined-user-code">M24</td>
+                    <td class="joined-input-site">트위터</td>
+                    <td class="joined-site-num">1</td>
+                    <td class="joined-user-state">수집중</td>
+                    <td class="joined-contents-num">-</td>
+                    <td class="joined-user-agree">-</td>
+                    <td class="joined-agree-date">-</td>
+                  </tr>
+                  <tr>
+                    <td class="joined-user-id">0001</td>
+                    <td class="joined-input-date">20220601</td>
+                    <td class="joined-user-name">홍길동</td>
+                    <td class="joined-user-birth">1998</td>
+                    <td class="joined-user-gender">남</td>
+                    <td class="joined-user-phone">010-1234-5678</td>
+                    <td class="joined-user-code">M24</td>
+                    <td class="joined-input-site">디시인사이드</td>
+                    <td class="joined-site-num">50</td>
+                    <td class="joined-user-state">완료</td>
+                    <td class="joined-contents-num">50</td>
+                    <td class="joined-user-agree">-</td>
+                    <td class="joined-agree-date">-</td>
+                  </tr>
+                  <tr>
+                    <td class="joined-user-id">0002</td>
+                    <td class="joined-input-date">20220605</td>
+                    <td class="joined-user-name">고기동</td>
+                    <td class="joined-user-birth">1991</td>
+                    <td class="joined-user-gender">남</td>
+                    <td class="joined-user-phone">010-4321-5678</td>
+                    <td class="joined-user-code">M24</td>
+                    <td class="joined-input-site">트위터</td>
+                    <td class="joined-site-num">1</td>
+                    <td class="joined-user-state">수집에러</td>
+                    <td class="joined-contents-num">-</td>
+                    <td class="joined-user-agree">-</td>
+                    <td class="joined-agree-date">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 다운로드 버튼 -->
+            <div class="btn-wrap btn-wrap-download">
+              <a href="#" class="down-state">현황 엑셀 다운로드</a>
+              <a href="#" class="down-twitter">트위터 엑셀 다운로드</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- <div id="footer"></div> -->
+  </div>
+
+  <script src='./src/js/jquery-3.5.1.js'></script>
+  <script src="./src/js/include.js"></script>
+  <script src="./src/js/main.js"></script>
 </body>
 
 </html>

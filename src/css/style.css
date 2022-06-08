@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+@import url("./reset.css");
+@import url("./font.css");
+
+/** COMMON **/
+.blind {
+  display: block;
+  position: absolute;
+  top: -99999px;
+  left: 0;
+}
+.clearFix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.center {
+  position: relative;
+  width: 1400px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+strong {
+  font-weight: 700;
+}
+
+button {
+  border: none;
+}
+
+.page-btn-wrap,
+.login-btn-wrap,
+.join-btn-wrap {
+  margin: 40px 0 30px;
+  text-align: center;
+}
+.btn-wrap > a,
+.btn-wrap > button {
+  display: inline-block;
+  line-height: 2.9em;
+  padding: 1px 2.2em 0;
+  margin: 0 14px;
+  background-color: rgb(0, 55, 100);
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-wrap > .btn:hover,
+.btn-wrap > button:hover {
+  background-color: rgb(0, 40, 80);
+}
+
+.btn-wrap > button.btn-type02 {
+  background-color: rgb(235, 242, 248);
+  color: rgb(0, 55, 100);
+}
+.btn-wrap > button.btn-type02:hover {
+  background-color: rgb(209, 225, 240);
+}
+.btn-wrap > button.btn-type02.btn-input-cancel {
+  background-color: rgb(251, 238, 237);
+  color: rgb(217, 100, 81);
+}
+.btn-wrap > button.btn-type02.btn-input-cancel:hover {
+  background-color: rgb(242, 220, 218);
+}
+
+.input-wrap > label {
+  display: block;
+}
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+  border: none;
+  background-color: #f2f5f8;
+  line-height: 44px;
+  font-size: 15px;
+  vertical-align: top;
+  text-indent: 15px;
+}
+
+select {
+  padding: 12px 20px 12px 15px;
+  line-height: 44px;
+  background-color: #f2f5f8;
+  border: none;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+table thead {
+  background-color: #edeff1;
+  font-size: 14px;
+  color: #666;
+}
+table thead th {
+  /* height: 34px; */
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 600;
+}
+tbody th,
+tbody th,
+tbody td {
+  height: 38px;
+  vertical-align: middle;
+  border: 1px solid #edeff1;
+  text-align: center;
+}
+tbody th {
+  font-size: 14px;
+}
+tbody td {
+  padding: 0 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+  color: #555;
+}
+
+/** WRAP **/
+#wrap {
+  width: 100%;
+}
+
+/** HEADER **/
+header {
+  position: relative;
+}
+.header-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+h1.logo {
+  width: 140px;
+}
+
+.gnb-user-area .gnb-user-box {
+  display: inline-block;
+  text-align: right;
+  font-size: 15px;
+}
+
+.gnb-user-area .gnb-my-namebox {
+  display: none;
+}
+.gnb-user-area.now-on .gnb-my-namebox {
+  display: inline-block;
+}
+
+.gnb-user-area .gnb-user-box > p {
+  display: inline-block;
+}
+.gnb-my-namebox > .btn-logout {
+  position: relative;
+  font-weight: 600;
+  color: #888;
+}
+.gnb-login-box > .btn-login:hover,
+.gnb-my-namebox > .btn-logout:hover {
+  color: #313131;
+}
+
+/** MAIN **/
+#main {
+  padding: 14px 14px 20px;
+}
+.section-padding-top {
+  margin-botto: 34px;
+}
+h2.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section-inner {
+  padding: 0 14px;
+  line-height: 1.4;
+}
