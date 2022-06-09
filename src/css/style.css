@@ -283,3 +283,7 @@ h2.page-title {
 .corpus-joined-list .btn-wrap > a {
   margin-right: 0;
 }
+
+.login-wrap .btn-wrap {
+  display: inline-block;
+}
