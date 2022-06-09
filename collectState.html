@@ -8,16 +8,26 @@
   <title>말뭉치 관리자</title>
 
   <link rel="stylesheet" href="./src/css/style.css">
+
+  <style>
+    #nav>.nav-collect-state>a {
+      color: #313131;
+    }
+
+    #nav>.nav-collect-state>a::after {
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
   <div id="wrap" class="corpus-collect-state">
     <div id="header"></div>
 
-    <div id="main" class="center">
+    <div id="main" class="full-center">
       <section class="section-page-top">
         <div class="section-inner">
-          <h2 class="page-title">웹 말뭉치 가입 진행 현황</h2>
+          <h2 class="page-title">웹 말뭉치 데이터 수집 현황</h2>
         </div>
       </section>
 
@@ -27,9 +37,49 @@
 
             <!-- 가입 진행 현황 테이블 -->
             <div class="input-info-table">
-              <h4 class="table-title">가입 진행 현황</h4>
+              <h4 class="table-title blind">데이터 수집 현황</h4>
               <table class="table-joined-list">
                 <colgroup>
+                  <!--프로젝트 번호-->
+                  <col width="4%">
+                  <!--포스트 번호-->
+                  <col width="4%">
+                  <!--입력사이트-->
+                  <col width="6%">
+                  <!--수집일자-->
+                  <col width="6%">
+                  <!--분류-->
+                  <col width="4%">
+                  <!--제목-->
+                  <col width="7%">
+                  <!--작성자-->
+                  <col width="5%">
+                  <!--원글날짜-->
+                  <col width="5%">
+                  <!--작성일-->
+                  <col width="5%">
+                  <!--조회수-->
+                  <col width="5%">
+                  <!--본문-->
+                  <col width="6%">
+                  <!--URL-->
+                  <col width="7%">
+                  <!--댓글수-->
+                  <col width="5%">
+                  <!--참여자 ID-->
+                  <col width="4%">
+                  <!--입력일자-->
+                  <col width="6%">
+                  <!--참여자 이름-->
+                  <col width="4%">
+                  <!--출생년도-->
+                  <col width="4%">
+                  <!--성별-->
+                  <col width="3%">
+                  <!--휴대전화 번호-->
+                  <col width="6%">
+                  <!--이용동의 계약서 여부-->
+                  <col width="5%">
                 </colgroup>
 
                 <thead>
@@ -47,7 +97,7 @@
                     <th>본문</th>
                     <th>URL</th>
                     <th>댓글수</th>
-                    <th>참여자 ID(일련번호)</th>
+                    <th>참여자 ID (일련번호)</th>
                     <th>입력 일자</th>
                     <th>참여자 이름</th>
                     <th>출생년도</th>
@@ -280,6 +330,19 @@
                   </tr>
                 </tbody>
               </table>
+              <ul class="pagination-list">
+                <!-- .page-arrow >> 넘어갈 페이지가 없을 경우 >> addClass '.disable' -->
+                <li class="page-arrow page-prev disable"><button>
+                    < </button>
+                </li>
+                <!-- 현재페이지 >> .page-count >> addClass '.now-on' -->
+                <li class="page-count now-on"><a href="#">1</a></li>
+                <!-- <li class="page-count"><a href="#">2</a></li>
+                <li class="page-count"><a href="#">3</a></li>
+                <li class="page-count"><a href="#">4</a></li>
+                <li class="page-count"><a href="#">5</a></li> -->
+                <li class="page-arrow page-next disable"><button>></button></li>
+              </ul>
             </div>
 
           </div>

@@ -8,6 +8,16 @@
   <title>말뭉치 관리자</title>
 
   <link rel="stylesheet" href="./src/css/style.css">
+
+  <style>
+    #nav>.nav-joined-state>a {
+      color: #313131;
+    }
+
+    #nav>.nav-joined-state>a::after {
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
@@ -27,7 +37,14 @@
 
             <!-- 가입 진행 현황 테이블 -->
             <div class="input-info-table">
-              <h4 class="table-title">가입 진행 현황</h4>
+              <h4 class="table-title blind">가입 진행 현황</h4>
+
+              <!-- 다운로드 버튼 -->
+              <div class="btn-wrap btn-wrap-download">
+                <a href="#" class="down-state">현황 엑셀 다운로드</a>
+                <a href="#" class="down-twitter">트위터 엑셀 다운로드</a>
+              </div>
+
               <table class="table-joined-list">
                 <colgroup>
                 </colgroup>
@@ -111,15 +128,113 @@
                     <td class="joined-user-agree">-</td>
                     <td class="joined-agree-date">-</td>
                   </tr>
+                  <tr>
+                    <td class="joined-user-id">0002</td>
+                    <td class="joined-input-date">20220605</td>
+                    <td class="joined-user-name">고기동</td>
+                    <td class="joined-user-birth">1991</td>
+                    <td class="joined-user-gender">남</td>
+                    <td class="joined-user-phone">010-4321-5678</td>
+                    <td class="joined-user-code">M24</td>
+                    <td class="joined-input-site">트위터</td>
+                    <td class="joined-site-num">1</td>
+                    <td class="joined-user-state">수집에러</td>
+                    <td class="joined-contents-num">-</td>
+                    <td class="joined-user-agree">-</td>
+                    <td class="joined-agree-date">-</td>
+                  </tr>
+                  <tr>
+                    <td class="joined-user-id">0002</td>
+                    <td class="joined-input-date">20220605</td>
+                    <td class="joined-user-name">고기동</td>
+                    <td class="joined-user-birth">1991</td>
+                    <td class="joined-user-gender">남</td>
+                    <td class="joined-user-phone">010-4321-5678</td>
+                    <td class="joined-user-code">M24</td>
+                    <td class="joined-input-site">트위터</td>
+                    <td class="joined-site-num">1</td>
+                    <td class="joined-user-state">수집에러</td>
+                    <td class="joined-contents-num">-</td>
+                    <td class="joined-user-agree">-</td>
+                    <td class="joined-agree-date">-</td>
+                  </tr>
+                  <tr>
+                    <td class="joined-user-id">0002</td>
+                    <td class="joined-input-date">20220605</td>
+                    <td class="joined-user-name">고기동</td>
+                    <td class="joined-user-birth">1991</td>
+                    <td class="joined-user-gender">남</td>
+                    <td class="joined-user-phone">010-4321-5678</td>
+                    <td class="joined-user-code">M24</td>
+                    <td class="joined-input-site">트위터</td>
+                    <td class="joined-site-num">1</td>
+                    <td class="joined-user-state">수집에러</td>
+                    <td class="joined-contents-num">-</td>
+                    <td class="joined-user-agree">-</td>
+                    <td class="joined-agree-date">-</td>
+                  </tr>
+                  <tr>
+                    <td class="joined-user-id">0002</td>
+                    <td class="joined-input-date">20220605</td>
+                    <td class="joined-user-name">고기동</td>
+                    <td class="joined-user-birth">1991</td>
+                    <td class="joined-user-gender">남</td>
+                    <td class="joined-user-phone">010-4321-5678</td>
+                    <td class="joined-user-code">M24</td>
+                    <td class="joined-input-site">트위터</td>
+                    <td class="joined-site-num">1</td>
+                    <td class="joined-user-state">수집에러</td>
+                    <td class="joined-contents-num">-</td>
+                    <td class="joined-user-agree">-</td>
+                    <td class="joined-agree-date">-</td>
+                  </tr>
+                  <tr>
+                    <td class="joined-user-id">0002</td>
+                    <td class="joined-input-date">20220605</td>
+                    <td class="joined-user-name">고기동</td>
+                    <td class="joined-user-birth">1991</td>
+                    <td class="joined-user-gender">남</td>
+                    <td class="joined-user-phone">010-4321-5678</td>
+                    <td class="joined-user-code">M24</td>
+                    <td class="joined-input-site">트위터</td>
+                    <td class="joined-site-num">1</td>
+                    <td class="joined-user-state">수집에러</td>
+                    <td class="joined-contents-num">-</td>
+                    <td class="joined-user-agree">-</td>
+                    <td class="joined-agree-date">-</td>
+                  </tr>
+                  <tr>
+                    <td class="joined-user-id">0002</td>
+                    <td class="joined-input-date">20220605</td>
+                    <td class="joined-user-name">고기동</td>
+                    <td class="joined-user-birth">1991</td>
+                    <td class="joined-user-gender">남</td>
+                    <td class="joined-user-phone">010-4321-5678</td>
+                    <td class="joined-user-code">M24</td>
+                    <td class="joined-input-site">트위터</td>
+                    <td class="joined-site-num">1</td>
+                    <td class="joined-user-state">수집에러</td>
+                    <td class="joined-contents-num">-</td>
+                    <td class="joined-user-agree">-</td>
+                    <td class="joined-agree-date">-</td>
+                  </tr>
                 </tbody>
               </table>
+              <ul class="pagination-list">
+                <!-- .page-arrow >> 넘어갈 페이지가 없을 경우 >> addClass '.disable' -->
+                <li class="page-arrow page-prev disable"><button>
+                    < </button>
+                </li>
+                <!-- 현재페이지 >> .page-count >> addClass '.now-on' -->
+                <li class="page-count now-on"><a href="#">1</a></li>
+                <!-- <li class="page-count"><a href="#">2</a></li>
+                <li class="page-count"><a href="#">3</a></li>
+                <li class="page-count"><a href="#">4</a></li>
+                <li class="page-count"><a href="#">5</a></li> -->
+                <li class="page-arrow page-next disable"><button>></button></li>
+              </ul>
             </div>
 
-            <!-- 다운로드 버튼 -->
-            <div class="btn-wrap btn-wrap-download">
-              <a href="#" class="down-state">현황 엑셀 다운로드</a>
-              <a href="#" class="down-twitter">트위터 엑셀 다운로드</a>
-            </div>
 
           </div>
         </div>

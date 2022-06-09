@@ -21,6 +21,12 @@
   max-width: 1400px;
   margin: 0 auto;
 }
+.full-center {
+  position: relative;
+  width: 100%;
+  min-width: 1600px;
+  margin: 0 auto;
+}
 
 strong {
   font-weight: 700;
@@ -99,6 +105,7 @@ table thead {
 }
 table thead th {
   /* height: 34px; */
+  padding: 0 5px;
   vertical-align: middle;
   font-size: 14px;
   font-weight: 600;
@@ -115,12 +122,69 @@ tbody th {
   font-size: 14px;
 }
 tbody td {
+  /* display: -webkit-box; */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   padding: 0 5px;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   text-overflow: ellipsis;
   overflow: hidden;
   font-size: 14px;
   color: #555;
+}
+
+.input-info-table .pagination-list {
+  margin-top: 24px;
+  text-align: center;
+}
+.input-info-table .pagination-list > li {
+  display: inline-block;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.input-info-table .pagination-list > li > button {
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+.input-info-table .pagination-list > li.page-arrow > button {
+  width: 22px;
+  height: 22px;
+  text-indent: -99999px;
+  background-image: url("../img/icon/icon-arrow_next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  overflow: hidden;
+}
+.input-info-table .pagination-list > li.page-arrow.page-prev > button {
+  transform: rotate(180deg);
+}
+.input-info-table .pagination-list > li.page-arrow.disable > button {
+  cursor: auto;
+  opacity: 0.1;
+}
+
+.input-info-table .pagination-list .page-count {
+  position: relative;
+  font-size: 14px;
+  color: #aaa;
+}
+.input-info-table .pagination-list .page-count.now-on {
+  font-weight: 600;
+  color: #555;
+}
+.input-info-table .pagination-list .page-count.now-on::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 1px;
+  background-color: #555;
 }
 
 /** WRAP **/
@@ -141,6 +205,30 @@ header {
 }
 h1.logo {
   width: 140px;
+}
+
+#nav > li {
+  display: inline-block;
+  padding: 0 20px;
+}
+#nav > li > a {
+  display: inline-block;
+  position: relative;
+  line-height: 64px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.03rem;
+  color: #aaa;
+}
+#nav > li > a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #888;
 }
 
 .gnb-user-area .gnb-user-box {
@@ -174,9 +262,10 @@ h1.logo {
   padding: 14px 14px 20px;
 }
 .section-padding-top {
-  margin-botto: 34px;
+  margin-bottom: 34px;
 }
 h2.page-title {
+  margin: 20px 0;
   font-size: 24px;
   font-weight: 600;
   text-align: center;
@@ -185,4 +274,12 @@ h2.page-title {
 .section-inner {
   padding: 0 14px;
   line-height: 1.4;
+}
+
+.corpus-joined-list .btn-wrap {
+  margin-bottom: 20px;
+  text-align: right;
+}
+.corpus-joined-list .btn-wrap > a {
+  margin-right: 0;
 }
